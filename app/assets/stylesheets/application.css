@@ -14,8 +14,68 @@
  *= require_self
  */
 
+ div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
+}
+
+table, th, td {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  /* display: inline-block; */
+  text-align: center;
+  /* border: 1px solid black; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h2 { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h3 { 
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+form {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* border: 1px solid black; */
+  display: inline-block
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: rgb(175, 76, 76);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }

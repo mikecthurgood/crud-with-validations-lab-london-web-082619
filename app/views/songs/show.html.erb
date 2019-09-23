@@ -1,0 +1,22 @@
+<h1><%= @song.title %></h1>
+<table>
+    <tr>
+        <th>Artist Name</th>
+        <th>Release Year</th>
+        <th>Genre</th>
+    </tr>
+    <tr>
+        <td><%= @song.artist_name %></td>
+        <td><% if !@song.release_year.blank? %>
+        <%= @song.release_year %>
+        <% else %>
+        <%= "This song is not yet released" %>
+        <% end %>
+        </td>
+        <td><%= @song.genre %></td>
+    </tr>
+    </table>
+    <%= link_to 'Back to Song List', songs_path %><br>
+    <%= link_to 'Edit Song', edit_song_path(@song) %><br>
+    <%= link_to 'Destroy', @song, method: :delete, data: { confirm: 'Are you sure?' } %> <br>
+    

@@ -1,0 +1,21 @@
+<h1>All songs</h1>
+
+<table style="width:50%">
+  <tr>
+    <th>Song</th>
+    <th>Artist</th>
+  </tr>
+  <% @songs.each do |song| %>
+  <tr>
+    <td><%= link_to song.title, song_path(song) %></td>
+    <td><%= song.artist_name %></td>
+    <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    <%# <%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <td>
+        <%= form_tag song_path(song.id), method: "delete" do %>
+        <%= submit_tag "Delete" %>
+        <% end %> 
+    </td>
+  </tr>
+  <% end %>
+</table>
